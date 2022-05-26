@@ -27,24 +27,20 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-function initialize() {
-    const fenway = { lat: 42.345573, lng: -71.098326 };
+// Initialize and add the map
+function initMap() {
+    // The location of Uluru
+    const uluru = { lat: 56.94552, lng: 24.1089 };
+    // The map, centered at Uluru
     const map = new google.maps.Map(document.getElementById("map"), {
-      center: fenway,
-      zoom: 14,
+        zoom: 4,
+        center: uluru,
     });
-    const panorama = new google.maps.StreetViewPanorama(
-      document.getElementById("pano"),
-      {
-        position: fenway,
-        pov: {
-          heading: 34,
-          pitch: 10,
-        },
-      }
-    );
-  
-    map.setStreetView(panorama);
-  }
-  
-  window.initialize = initialize;
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+    });
+}
+
+window.initMap = initMap;

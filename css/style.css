@@ -137,17 +137,19 @@ body {
     text-align: center;
 }
 
-.offers, td {
-    height:40px;
+.offers,
+td {
+    height: 40px;
 }
 
-.review{
+.review {
     margin-top: 610px;
 }
 
-#map,
-#pano {
-  float: left;
-  height: 100%;
-  width: 100%;
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
 }
