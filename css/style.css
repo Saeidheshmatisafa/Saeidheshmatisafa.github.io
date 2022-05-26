@@ -153,3 +153,22 @@ td {
     width: 100%;
     /* The width is the width of the web page */
 }
+
+.fast_host_info{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    white-space: nowrap;
+}
+
+#bolding{
+    font-weight: bold;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+
